@@ -1,4 +1,9 @@
 
+$(function() {
   $('.carousel').carousel({
-    interval: 10000000
-  })
+    interval: false
+  });
+  $('.search-icon').on('click',function() {
+    $('.main-menu .input-group').slideToggle();
+  });
+});

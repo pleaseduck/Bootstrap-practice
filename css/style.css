@@ -171,6 +171,7 @@ body {
   background-color: #000;
   padding: 10px 15px;
   border-radius: 5px;
+  position: relative;
 }
 .main-menu .navbar-brand img {
   transition: width .5s;
@@ -195,10 +196,37 @@ body {
 .carousel-indicators-wrap {
   text-align: center;
 }
+.search-icon {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    line-height: 70px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+@media (min-width:1200px) {
+  .input-group {
+    display: inline-table !important;
+    position: relative;
+  }
+}
 @media (max-width: 1200px) {
   /*----header----*/
   .navbar-right {
     float: none !important;
+  }
+  .search-icon {
+    display: block;
+  }
+  .input-group {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;;
   }
 }
 @media (max-width:992px) {
@@ -249,5 +277,18 @@ body {
   }
   .carousel-caption .button {
     font-size: 16px;
+  }
+  .search-icon {
+    display: none;
+  }
+  .input-group {
+    display: inline-table !important;
+    position: relative;
+    top: 0;
+    padding: 0;
+    left: 0;
+  }
+  .main-menu .navbar-form {
+    margin-right: 0;
   }
 }
