@@ -205,6 +205,86 @@ body {
     cursor: pointer;
     display: none;
 }
+/*-------main--------*/
+main {
+  background-color: #ececec;
+}
+.main-slogan {
+  font-size: 30px;
+  background-color: white;
+  border-top: 1px solid #cfcfcf;
+  Border-bottom:3px solid #dadada;
+  padding: 50px 0;
+}
+.main-slogan p {
+  padding: 0 20px;
+}
+.sidebar h3,
+.content h3 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.sidebar-widget {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 12px;
+  border-bottom: 3px solid #dadada;
+}
+.sidebar-widget:nth-of-type(2) {
+    margin-bottom: 50px;
+}
+.sidebar {
+  border-right: 3px solid #dadada;
+}
+.sidebar-widget ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar-widget ul  li a {
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+}
+.sidebar-widget ul  li.more a {
+  color: #4191cf;
+}
+.sidebar-carousel-caption {
+  background-color: white;
+  max-width: 225px;
+  text-align: center;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 50px;
+}
+.sidebar-carousel-caption h4 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+}
+.sidebar-carousel-caption p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #d3d3d3;
+}
+.sidebar-carousel .carousel-indicators {
+  position: relative;
+  width: auto;
+  left:0;
+  margin-left: 0;
+  max-width: 225px;
+  top:-51px;
+  background-color: white;
+  border-top: 1px solid #dadada;
+}
+.sidebar-carousel .carousel-indicators li {
+  background-color: #9a9a9a;
+}
+.sidebar-carousel .carousel-indicators li.active {
+  background-color: #5b5b5b;
+}
 @media (min-width:1200px) {
   .input-group {
     display: inline-table !important;
@@ -226,7 +306,7 @@ body {
     top: 70px;
     padding: 15px;
     background: rgba(0,0,0,0.5);
-    border-radius: 5px;;
+    border-radius: 5px;
   }
 }
 @media (max-width:992px) {
